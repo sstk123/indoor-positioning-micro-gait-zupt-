@@ -1,0 +1,38 @@
+# depslib dependency file v1.0
+1520494815 source:/root/桌面/getdata3/main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<sstream>
+	<fstream>
+	<pthread.h>
+	<stdio.h>
+	<stdlib.h>
+	"JY-901B.cpp"
+	"time.h"
+	<sys/time.h>
+	<unistd.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<netinet/in.h>
+	<netdb.h>
+	<string.h>
+	<errno.h>
+	<arpa/inet.h>
+	<deque>
+	<string>
+	<cstring>
+
+1502003632 /root/桌面/getdata3/JY-901B.cpp
+	"JY-901B.h"
+	"string.h"
+
+1502003658 /root/桌面/getdata3/JY-901B.h
+	<cstddef>
+	<linux/i2c-dev.h>
+	<sys/ioctl.h>
+	<cstdlib>
+	<cstdio>
+	<fcntl.h>
+	<unistd.h>
+
