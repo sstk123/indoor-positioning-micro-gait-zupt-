@@ -4,7 +4,6 @@ indoor positioning (micro gait /zupt)
 1.概述 
   该系统利用9250采集数据，然后利用电脑离线处理
 2.硬件结构
-https://github.com/sstk123/indoor-positioning-micro-gait-zupt-/master/indoorpositioning/图片1.png
 图1 系统硬件构成
 a.MPU-9250负责采集加速度与角速度原始数据
 b.Arduino负责在MPU-9250中读取数据并利用串口将数据传送至电脑
@@ -39,3 +38,4 @@ C.如果程序是在root下写的，则需要登录到root账户
    配置好远程软件后，将远程软件打开连接后切换到后台，然后打开
 即处理数据的软件，
 3）树莓派程序
+4）在做完上述的准备工作后，将远程控制程序切换到后台，RaspiZupt切换到前端就可以实时的获取运动轨迹
