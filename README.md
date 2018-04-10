@@ -4,7 +4,7 @@ indoor positioning (micro gait /zupt)
 1.概述 
   该系统利用9250采集数据，然后利用电脑离线处理
 2.硬件结构
-https://github.com/sstk123/indoor-positioning-micro-gait-zupt-/raw/master/indoorpositioning/图片1.png
+https://github.com/sstk123/indoor-positioning-micro-gait-zupt-/master/indoorpositioning/图片1.png
 图1 系统硬件构成
 a.MPU-9250负责采集加速度与角速度原始数据
 b.Arduino负责在MPU-9250中读取数据并利用串口将数据传送至电脑
