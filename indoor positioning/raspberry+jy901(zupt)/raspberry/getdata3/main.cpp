@@ -26,6 +26,7 @@ const double pi = 3.1415926;
 deque<string> data;
 char ip[100];
 int PORT;
+
 //Two threads,one for data collection,one for data transmission and for data deletion
 void* thread1(void* s)
 {
@@ -101,6 +102,8 @@ void* thread1(void* s)
     }
 
 }
+
+//Sending data with Socket
 void* thread2(void* s)
 {
     int client_sockfd;
@@ -120,8 +123,6 @@ void* thread2(void* s)
         return NULL;
     }
     sin_size=sizeof(struct sockaddr_in);
-
-
 
     while(true)
     {
@@ -147,6 +148,7 @@ void* thread2(void* s)
 }
 int main()
 {
+	
     printf("please input the ip\n");
     cin>>ip;
     printf("please input the PORT\n");

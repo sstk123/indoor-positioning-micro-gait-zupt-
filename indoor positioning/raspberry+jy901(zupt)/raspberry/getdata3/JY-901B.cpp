@@ -1,6 +1,7 @@
 #include "JY-901B.h"
 #include "string.h"
 
+
 CJY901::CJY901(unsigned char bus, unsigned char devAddr) {
 	I2CBus = bus;
 	I2CAddress = devAddr;
@@ -9,6 +10,8 @@ CJY901::CJY901(unsigned char bus, unsigned char devAddr) {
 			I2CBus);
 }
 
+//开启总线
+//start bus
 bool CJY901::Open() {
 	printf("Trying to open bus: %i:", I2CBus);
 	char fileNameBuffer[32];
@@ -31,22 +34,36 @@ bool CJY901::Open() {
 	return true;
 }
 
+//获取时间
+//get time
 void CJY901::GetTime() {
 	i2c_smbus_read_i2c_block_data(I2CFileDescriptor, 0x30, 8,
 			(unsigned char*) &stcTime);
 }
+
+//获取加速度
+//get acceleration
 void CJY901::GetAcc() {
 	i2c_smbus_read_i2c_block_data(I2CFileDescriptor, AX, 6,
 			(unsigned char *) &stcAcc);
 }
+
+//获取加速度偏差
+//get acceleration bias
 void CJY901::GetAcc_bias(){
     i2c_smbus_read_i2c_block_data(I2CFileDescriptor,AXOFFSET,6,
             (unsigned char *) &stcAcc_bias);
 }
+
+//获取陀螺仪数据
+//get Gyroscope data
 void CJY901::GetGyro() {
 	i2c_smbus_read_i2c_block_data(I2CFileDescriptor, GX, 6,
 			(unsigned char *) &stcGyro);
 }
+
+//获取陀螺仪偏差
+//get Gyroscope bias
 void CJY901::GetGyro_bias(){
     i2c_smbus_read_i2c_block_data(I2CFileDescriptor,GXOFFSET,6,
             (unsigned char *) &stcGyro_bias);
