@@ -1,4 +1,4 @@
-Judging still condition by acceleration variance
+%Judge stance condition by acceleration variance
 function ret = C2(acc_b, k,acc_size)
     threshold_var_a = 3;
     s = 15;

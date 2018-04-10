@@ -14,6 +14,8 @@ fclose(s);
 fopen(s);
 disp('Start...');
 ti=tic;
+
+%collect data
 while (flag==true)
    rawData = fscanf(s,'%f')';
    %Each group of data includes acceleration, angular velocity and timestamp, seven

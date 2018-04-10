@@ -1,3 +1,5 @@
+%静止判断条件
+%judge Stance Phase
 function ret = C1(data_acc)
     threshold_a_min = 9;
     threshold_a_max = 11;

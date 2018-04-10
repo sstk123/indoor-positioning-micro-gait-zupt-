@@ -1,0 +1,7 @@
+文件说明
+1.biasCircle、biasLine、biasRec是三组数据circle_3_0228、line_3_0228、rec_3_0228的偏差
+2.StanceDetection用以静止条件的判断，C1、C2、C3是判断静止的三个条件
+3.IndoorPedestrainNavigation_circle、IndoorPedestrainNavigation_line、IndoorPedestrainNavigation_rec是处理圆、直线以及矩形的三个主函数
+4.dataCollect用以利用arduino采集mpu-9250数据
+5.dataProcess 使用保守的方法对偏差数据进行处理
+6.ZARU用于零角度更新
